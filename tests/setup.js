@@ -15,9 +15,6 @@ global._ = _;
 global.shallow = shallowMount;
 
 // A special version of `shallow` for view components
-global.mountShallowView = (Component, options = {}) => global.shallow(Component, {
-  ...options,
-});
 
 global.debug = (componentWrapper) => {
   // eslint-disable-next-line

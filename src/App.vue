@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1> Morse Code Translator </h1>
+    <translator />
   </div>
 </template>
 
 <script>
-import HelloWorld from '@components/common/helloWorld';
+import Translator from '@components/translator/translator';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Translator
   }
 }
 </script>
@@ -24,5 +24,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+canvas {
+  background-color: #000;
+  width: 700px;
+  height: 400px;
+  margin: 0 auto;
 }
 </style>
