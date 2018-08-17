@@ -6,6 +6,6 @@ describe('HelloWorld', () => {
   const wrapper = mount(HelloWorld);
 
   it('renders a component', () => {
-    expect(wrapper.html()).toContain('<h3>Installed CLI Plugins</h3>')
+    expect(wrapper.html()).toContain('<h1> HELLO THERE </h1>')
   })
 })
