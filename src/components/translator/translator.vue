@@ -1,13 +1,22 @@
 <script>
 export default {
-  name: 'InputField'
+  name: 'Translator',
+  data() {
+    return {
+      inputString: ''
+    }
+  },
+  methods: {
+    translateToEnglish() {
+    }
+  }
 };
 </script>
 
 <template>
   <div class="translate-field">
-    <input type="text" /> 
-    <button> Translate to English </button>
+    <input type="text" v-model="inputString" /> 
+    <button @click="translateToEnglish"> Translate to English </button>
   </div>
 </template>
 
