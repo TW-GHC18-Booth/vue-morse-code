@@ -1,35 +1,49 @@
-<template>
-  <div id="app">
-    <h1> Morse Code Translator </h1>
-    <translator />
-  </div>
-</template>
 
 <script>
 import Translator from '@components/translator/translator';
+import Sidebar from '@components/sidebar/sidebar';
 
 export default {
   name: 'app',
   components: {
-    Translator
+    Translator,
+    Sidebar
   }
 }
 </script>
+
+<template>
+  <div id="app">
+    <div class="main-container">
+      <translator />
+    </div>
+    <div class="sidebar">
+      <sidebar />
+    </div>
+  </div>
+</template>
+
 
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-wrap: nowrap;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  overflow: hidden;
+  height:100vh;
 }
 
-canvas {
-  background-color: #000;
-  width: 700px;
-  height: 400px;
-  margin: 0 auto;
+.main-container {
+  flex: 0 1 70%;
 }
+
+.sidebar {
+  flex: 0 1 30%;
+  background-color: #d2ecef;
+}
+
 </style>

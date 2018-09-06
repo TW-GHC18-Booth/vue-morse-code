@@ -1,5 +1,5 @@
 export const UNTRANSLATABLE = 'Untranslatable';
-import morseAlphabet from './morseAlphabet';
+import morseAlphabet from '@utils/morseAlphabet';
 
 export function isValidMorseInput(input) {
   const morseMatcher = /^[ .-]*/g;
@@ -8,7 +8,7 @@ export function isValidMorseInput(input) {
     return false;
   }
   return true;
-};
+}
 
 export function translateMorseToEnglish(input) {
   const morseArr = input.split(' ');
@@ -29,7 +29,7 @@ export function translateMorseToEnglish(input) {
       }
     }
   });
-  if (englishStr.includes('#')) { return UNTRANSLATABLE };
+  if (englishStr.includes('#')) { return UNTRANSLATABLE; }
 
   return englishStr;
 }

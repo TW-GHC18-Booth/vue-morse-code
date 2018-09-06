@@ -23,6 +23,16 @@ export default {
 
 <template>
   <div>
+    <h1> Morse Code Translator </h1>
+    <div class="translator-rules">
+      <h3> Rules </h3>
+      <ol>
+        <li>Type in Morse code in the text field.</li>
+        <li>Place 1 space between each letter.</li>
+        <li>Place 3 spaces between each word.</li>
+        <li>Hit the "Translate to English" button to see your code translated.</li>
+      </ol>
+    </div>
     <div class="translate-field">
       <input type="text" v-model="inputString" /> 
       <button @click="translateToEnglish"> Translate to English </button>
@@ -70,10 +80,22 @@ export default {
 }
 
 .translate-field button {
-  background-color: #74a0e8;
+  background-color: #d2ecef;
   border-radius: 8px;
   font-weight: bold;
   margin-left: 15px;
+}
+
+.translator-rules {
+  text-align: left;
+  align-self: flex-start;
+  margin-bottom: 40px;
+  margin-right: 10px;
+  border: 3px double #d2ecef;
+}
+
+.translator-rules h3 {
+  margin-left: 20px;
 }
 
 .warning {
