@@ -40,7 +40,7 @@ export default {
     <p v-show="!validInput" class="warning"> Invalid Input </p>
     <div class="translated-display">
       <h3> $translated-string:> </h3> 
-      <p> {{ translatedString }} </p>
+      <p id="translated-string"> {{ translatedString }} </p>
     </div>
   </div>
 </template>
