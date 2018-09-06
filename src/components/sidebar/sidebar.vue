@@ -5,7 +5,7 @@ export default {
   name: 'Sidebar',
   data() {
     return {
-      morseAlphabet: morseAlphabet.MORSE_TO_ENGLISH
+      morseAlphabet: ''
     }
   },
   methods: {
