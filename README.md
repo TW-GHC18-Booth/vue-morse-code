@@ -19,3 +19,6 @@ $ yarn unit
 //-or-
 $ yarn unit:watch
 ```
+
+## Pairing Tips
+Run `yarn unit:watch` to watch the tests update in real time as you change the code. 
